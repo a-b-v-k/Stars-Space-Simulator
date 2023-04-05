@@ -50,6 +50,7 @@ while(run):
     for star in stars:
         if star.x < 0 or star.x > 500 or star.y < 0 or star.y > 500 or (star.x == 250 and star.y == 250):
             stars.remove(star) #REMOVING STARS THAT GO OUT OF BOUNDARIES
+            continue
         star.draw()
         star.move()
 
