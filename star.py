@@ -54,7 +54,7 @@ while(run):
         star.draw()
         star.move()
 
-    if(len(stars) < 200): #THIS THE MAXIMUM COUNT OF STARS THAT APPEAR ON THE SCREEN AT ONCE
+    if(len(stars) < 300): #THIS THE MAXIMUM COUNT OF STARS THAT APPEAR ON THE SCREEN AT ONCE
         stars.append(Star())
 
     for event in pygame.event.get():
